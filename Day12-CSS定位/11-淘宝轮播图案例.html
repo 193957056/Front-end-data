@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝轮播图做法</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .tb-promo {
+            position: relative;
+            width: 318px;
+            height: 159px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+        
+        .tb-promo img {
+            width: 318px;
+            height: 159px;
+        }
+        /* 并集选择器可以集体声明相同的样式 */
+        
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            background: rgba(0, 0, 0, .3);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .prev {
+            left: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        
+        .next {
+            right: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        
+        .promo-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 70%;
+            margin-left: 1px;
+            width: 70px;
+            height: 13px;
+            /* background-color: pink; */
+            background: rgba(255, 255, 255, .7);
+            border-radius: 7px;
+        }
+        
+        .promo-nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+        }
+        /* 不要忘记选择器权重问题 */
+        
+        .promo-nav .selected {
+            background-color: #fff500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="./images/quanjing.png" alt="">
+        <!-- 左侧按钮箭头 -->
+        <a href="#" class="prev">&lt;</a>
+
+        <!-- 右侧按钮箭头 -->
+        <a href="#" class="next">&gt;</a>
+        <!-- 底下小圆点 -->
+        <div class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+
+    </div>
+</body>
+
+</html>

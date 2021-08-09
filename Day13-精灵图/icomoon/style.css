@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?y00vub');
+  src:  url('fonts/icomoon.eot?y00vub#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?y00vub') format('truetype'),
+    url('fonts/icomoon.woff?y00vub') format('woff'),
+    url('fonts/icomoon.svg?y00vub#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.icon-image:before {
+  content: "\e90d";
+}
+.icon-connection:before {
+  content: "\e91b";
+}
+.icon-price-tags:before {
+  content: "\e936";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-compass2:before {
+  content: "\e94a";
+}
+.icon-drawer2:before {
+  content: "\e95d";
+}
+.icon-users:before {
+  content: "\e972";
+}
+.icon-spinner4:before {
+  content: "\e97d";
+}
+.icon-shrink:before {
+  content: "\e98a";
+}
+.icon-hammer:before {
+  content: "\e996";
+}
+.icon-mug:before {
+  content: "\e9a2";
+}
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+.icon-list:before {
+  content: "\e9ba";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}

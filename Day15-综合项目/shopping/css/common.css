@@ -1,4 +1,147 @@
+/* 声明字体图标 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?uif7pv');
+    src: url('../fonts/icomoon.eot?uif7pv#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?uif7pv') format('truetype'), url('../fonts/icomoon.woff?uif7pv') format('woff'), url('../fonts/icomoon.svg?uif7pv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* 版心 */
+
 .w {
     width: 1200px;
     margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+
+/* 快捷导航模块 */
+
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+
+/* 选择所有的偶数的小li */
+
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow-icon::after {
+    content: "\ea43";
+    font-family: 'icomoon';
+    margin-left: 6px;
+}
+
+
+/* 头部制作 */
+
+.header {
+    position: relative;
+    height: 105px;
+    background-color: pink;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 175px;
+    height: 56px;
+    background-color: skyblue;
+}
+
+.logo a {
+    display: block;
+    width: 175px;
+    height: 56px;
+    background: url(../images/logo.png) no-repeat;
+    /* font-size: 0;京东的做法 */
+    /* 淘宝的做法让文字隐藏 */
+    text-indent: -99999px;
+    overflow: hidden;
+}
+
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+
+.shopcar::before {
+    font-family: 'icomoon';
+    content: '\e93a';
+    margin-right: 5px;
+    color: #b1191a;
+}
+
+.shopcar::after {
+    font-family: 'icomoon';
+    content: '\e903';
+    margin-left: 10px;
 }
